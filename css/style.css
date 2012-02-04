@@ -1,0 +1,127 @@
+* { margin: 0; }
+#header {
+	min-height: 120px;
+	background: #000 url(../images/tile_1.png);	
+	border-bottom: 1px solid #222;
+}
+body {
+	background: #fff url(../images/background.png);
+	font-family: "Myriad Pro", "Myriad", helvetica, sans-serif;
+	
+}
+#navigator {
+	min-height: 250px;
+	background: #000 url(../images/tile_2.png);
+}
+#header #logo {
+	background-image: url(../images/logo.png);
+	width: 62px;
+	height: 61px;
+	position: absolute;
+	top: 30px;
+	left: 150px;
+}
+#header .name {
+	font-family: "Myriad Pro", "Myriad", helvetica, sans-serif;
+	font-size: 35px;
+	position: absolute;
+	text-shadow: 1px 1px 4px #000;
+	text-transform: uppercase;
+}
+#header #first-name {
+	margin-left: 30px;
+	color: #ddddde;
+	margin-top: 43px;
+}
+#header #last-name {
+	position: absolute;
+	color: #d3d4d4;
+	left: 230px;
+	top: 43px;
+}
+#header #tagline {
+	font-family: "Myriad Pro", "Myriad", helvetica, sans-serif;
+	font-size: 18px;
+	position: absolute;
+	margin-left: 125px;
+	margin-top: 95px;
+	color: #b2b2b2;
+	opacity: .1;
+}
+#header-logo #tagline.active {
+	opacity: 1;
+	-webkit-transition: opacity 0.3s linear; 
+}
+#header-logo #tagline.inactive {
+	opacity: .1;
+	-webkit-transition: opacity 0.3s linear;
+}
+#main-navigation a {
+	text-decoration: none;
+	color: #ddddde;
+	font-family: "Myriad Pro", "Myriad", helvetica, sans-serif;
+	margin-right: 20px;
+	font-size: 14px;
+	padding: 6px 8px 6px 8px;
+	-webkit-border-radius: 5px;
+	background: rgba(25,25,25,0.4);
+	opacity: .9;
+}
+#main-navigation a:hover {
+	opacity: 1;
+	_-webkit-box-shadow: 0px 1px 1px #303740;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#666d77), to(#454b53));
+	
+}
+#main-navigation a:active {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#595f68), to(#454b54));
+}
+#main-navigation {
+	width: 250px;
+	margin-top: 175px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#current-project-header {
+	font-family: "Kaushan Script","Myriad Pro", "Myriad", helvetica, cursive;
+	font-size: 28px;
+	position: relative;
+	top: 20px;
+	left: 100px;
+	width: 400px;
+	color: #ddddde;
+}
+.project {
+	background: #ddddde url(../images/project_bg.png);
+	float: left;
+	width: 375px;
+	height: 100px;
+	margin-top: 70px;
+	margin-left: 100px;
+	padding: 10px;
+	border-radius: 5px;
+}
+.project p {
+	
+}
+#projects .image {
+	float: right;
+	padding: 3px;
+	border: 3px solid #b2b2b2;
+	margin-right: 100px;
+	opacity: .9;
+	height: 150px;
+}
+#projects #project-name {
+	font-size: 25px;
+	position: absolute;
+	text-shadow: 2px 2px 4px #3a3a3a;
+	font-family: "Kaushan Script","Myriad Pro", "Myriad", helvetica, cursive;
+	font-weight: bold;
+	color: #e8e8b9;
+	margin-left: 100px;
+	margin-top: 25px;
+}
+#projects .image:hover {
+	opacity: 1;
+}
