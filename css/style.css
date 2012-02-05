@@ -10,8 +10,9 @@ body {
 	
 }
 #navigator {
-	min-height: 250px;
+	height: 250px;
 	background: #000 url(../images/tile_2.png);
+	overflow: hidden;
 }
 #header #logo {
 	background-image: url(../images/logo.png);
@@ -76,52 +77,52 @@ body {
 #main-navigation a:active {
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#595f68), to(#454b54));
 }
-#main-navigation {
-	width: 250px;
-	margin-top: 175px;
+#navigator #main-navigation {
+	width: 270px;
+	padding-top: 10px;
 	margin-right: auto;
 	margin-left: auto;
+}
+#project-container {
+	width: 100%;
+	height: 100px;
+	display: inline-block;
+}
+.project {
+	position: absolute;
+	width: 100%;
+	height: 175px;
+	margin-top: 7px;
+	float: left;
+}
+.project .content {
+	background-color: #fff;
+	font-family: "Myriad Pro", "Myriad", helvetica, sans-serif;
+	font-size: 18px;
+	color: #303030;
+	padding: 10px;
+	border: 1px solid #202020;
+	margin-left: 20px;	
+	margin-right: 20px;
+	background: #b2b2b2 url(../images/project_bg.png);
+	height: 140px;
+	border-radius: 7px;
+	-webkit-box-shadow: 1px 1px 4px #323232;
 }
 #current-project-header {
 	font-family: "Kaushan Script","Myriad Pro", "Myriad", helvetica, cursive;
 	font-size: 28px;
-	position: relative;
-	top: 20px;
-	left: 100px;
-	width: 400px;
+	padding-top: 10px;
+	margin-left: 25px;
 	color: #ddddde;
 }
-.project {
-	background: #ddddde url(../images/project_bg.png);
-	float: left;
-	width: 375px;
-	height: 100px;
-	margin-top: 70px;
-	margin-left: 100px;
-	padding: 10px;
-	border-radius: 5px;
-}
-.project p {
-	
-}
-#projects .image {
-	float: right;
-	padding: 3px;
-	border: 3px solid #b2b2b2;
-	margin-right: 100px;
-	opacity: .9;
-	height: 150px;
-}
-#projects #project-name {
-	font-size: 25px;
+#link-indicator {
 	position: absolute;
-	text-shadow: 2px 2px 4px #3a3a3a;
-	font-family: "Kaushan Script","Myriad Pro", "Myriad", helvetica, cursive;
-	font-weight: bold;
-	color: #e8e8b9;
-	margin-left: 100px;
-	margin-top: 25px;
-}
-#projects .image:hover {
-	opacity: 1;
+	left: 0;
+	top: 0;
+	display: none;
+	width: 40px;
+	height: 34px;
+	background-image: url(../images/link_indicator.png);
+	z-index: 0;
 }
